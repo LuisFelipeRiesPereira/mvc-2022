@@ -1,3 +1,0 @@
-erro no Main.php linha 88
-
-tentei incluir a parada do dashboard e deu errado

@@ -85,8 +85,8 @@ class Main
 			return;
 		}#class_exists
 		
-		#Colocando um valor no `action` para evitar erros na `method_exists`
-		$this->action = "";
+		#Impedindo erros de decapreted acontecer
+		error_reporting(E_ALL ^ E_DEPRECATED);
 		
 		#Cria o objeto da classe do controller
 		$this->controller = new $this->controller();

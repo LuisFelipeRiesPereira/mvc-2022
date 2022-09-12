@@ -55,27 +55,27 @@ class MovimentsController extends MainController
 		echo $dados;
 	}
 
-	//exemplo:
-	// public function select($id=null){
-	// 	$model=$this->load_model("exemplo");
-	// 	$dadosExemplo=$model->select($id);
-	// 	/** Carrega os arquivos do view **/
-	// 	require PATH . '/views/includes/header.php';
-    //    	require PATH . '/views/includes/menu.php';
-	// 	require_once PATH . '/views/exemplo/index.php';
-	// 	require PATH . '/views/includes/footer.php';
-	// }
+	exemplo:
+	public function select($id=null){
+		$model=$this->load_model("exemplo");
+		$dadosExemplo=$model->select($id);
+		/** Carrega os arquivos do view **/
+		require PATH . '/views/includes/header.php';
+       	require PATH . '/views/includes/menu.php';
+		require_once PATH . '/views/exemplo/index.php';
+		require PATH . '/views/includes/footer.php';
+	}
 	
-	// public function insert(){
-	// 	require PATH . '/views/includes/header.php';
-    //    	require PATH . '/views/includes/menu.php';
-	// 	$exemplo=$this->load_model("exemplo");
-	// 	if($result=$exemplo->insert()){
-	// 		echo "Registro Realizado!";
-	// 	}else{
-	// 		echo "Falha ao realizar o registro";
-	// 	}
-	// 	require PATH . '/views/includes/footer.php';
-	// }	
+	public function insert(){
+		require PATH . '/views/includes/header.php';
+       	require PATH . '/views/includes/menu.php';
+		$exemplo=$this->load_model("exemplo");
+		if($result=$exemplo->insert()){
+			echo "Registro Realizado!";
+		}else{
+			echo "Falha ao realizar o registro";
+		}
+		require PATH . '/views/includes/footer.php';
+	}	
 	
 }

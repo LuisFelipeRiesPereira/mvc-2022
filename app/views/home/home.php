@@ -22,10 +22,11 @@
 
 	<blockquote cite="https://tableless.com.br/mvc-afinal-e-o-que/"><strong>View:</strong> Fala Controller ! O usuário acabou de pedir para acessar o Facebook ! Pega os dados de login dele ai. <strong>Controller:</strong> Blz. Já te mando a resposta. Ai model, meu parceiro, toma esses dados de login e verifica se ele loga. <strong>Model:</strong> Os dados são válidos. Mandando a resposta de login. <strong>Controller:</strong> Blz. View, o usuário informou os dados corretos. Vou mandar pra vc os dados dele e você carrega a página de perfil. <strong>View:</strong> Vlw. Mostrando ao usuário…</blockquote>
 
-	
 	<h1>Dashboard</h1>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<!-- Nescessário para transformar o conteúdo de moviments no php em uma váriavel utilizavel do javascript -->
     <script> var moviments = JSON.parse('<?= json_encode($moviments); ?>'); </script>
 	<script src="<?php echo URL_BASE ?>/app/views/home/script.js"></script>
-    <div id="curve_chart" style="width: 97%; height: 500px"></div>
+    <div id="curve_chart" style="width: 97vw; height: 30vw"></div>
+	<div id="piechart" style="width: 97vw; height: 30vw;"></div>
 </div>
